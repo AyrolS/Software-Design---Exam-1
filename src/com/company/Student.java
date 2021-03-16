@@ -1,42 +1,28 @@
 package com.company;
 
 public class Student {
-    String id;
-    int credit;
-    int pointsEarned;
+    String id= "9999";
+    int credit = 3;
+    int pointsEarned = 12;
     double gpa;
 
     public String getId(){
         return id;
     }
-    public void setId(String id) {
-        this.id = id;
-    }
 
     public int getCredit() {
         return credit;
-    }
-    public void setCredit(int credit) {
-        this.credit = credit;
     }
 
     public int getPointsEarned() {
         return pointsEarned;
     }
-    public void setPointsEarned(int pointsEarned) {
-        this.pointsEarned = pointsEarned;
-    }
 
-
-    public void calculateGPA(){
+    public double calculateGPA(double gpa){
         gpa = pointsEarned/(double)credit;
+        return gpa;
     }
 
-    void displayValues(){
-        System.out.println("Student 1 ID: " + getId());
-        System.out.println("Student 1 Credits : " + getCredit());
-        System.out.println("Student 1 Points: "+getPointsEarned());
-        System.out.println("THE GPA IS: " + gpa);
-    }
+
 
 }
